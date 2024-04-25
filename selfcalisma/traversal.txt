@@ -1,0 +1,8 @@
+inorder (x+y) * ((a+b) / c)
+postorder x y + a b + c / *
+
+(x + y) * ((a + b) / c) 
+
+preorder askitom yapicak
+* (+ x y) (/ (+ a b) c)
+

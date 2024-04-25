@@ -1,0 +1,115 @@
+@startuml hakan
+
+interface Device {
+    {abstract} +getName(): String
+    {abstract} +getPrice(): double
+    {abstract} +getQuantity(): int
+    {abstract} +getCategory(): String
+    {abstract} +setCategory(String): void
+    {abstract} +setName(String): void
+    {abstract} +setPrice(double): void
+    {abstract} +setQuantity(int): void
+}
+
+class Tv {
+    - category: String
+    - name: String
+    - price: double
+    - quantity: int
+    + getCategory(): String
+    + setCategory(String): void
+    + getName(): String
+    + setName(String): void
+    + getPrice(): double
+    + setPrice(double): void
+    + getQuantity(): int
+    + setQuantity(int): void
+}
+
+class Laptop {
+    - category: String
+    - name: String
+    - price: double
+    - quantity: int
+    + getCategory(): String
+    + setCategory(String): void
+    + getName(): String
+    + setName(String): void
+    + getPrice(): double
+    + setPrice(double): void
+    + getQuantity(): int
+    + setQuantity(int): void
+}
+
+class Headphone {
+    - category: String
+    - name: String
+    - price: double
+    - quantity: int
+    + getCategory(): String
+    + setCategory(String): void
+    + getName(): String
+    + setName(String): void
+    + getPrice(): double
+    + setPrice(double): void
+    + getQuantity(): int
+    + setQuantity(int): void
+}
+
+class Keyboard {
+    - category: String
+    - name: String
+    - price: double
+    - quantity: int
+    + getCategory(): String
+    + setCategory(String): void
+    + getName(): String
+    + setName(String): void
+    + getPrice(): double
+    + setPrice(double): void
+    + getQuantity(): int
+    + setQuantity(int): void
+}
+
+class Mouse {
+    - category: String
+    - name: String
+    - price: double
+    - quantity: int
+    + getCategory(): String
+    + setCategory(String): void
+    + getName(): String
+    + setName(String): void
+    + getPrice(): double
+    + setPrice(double): void
+    + getQuantity(): int
+    + setQuantity(int): void
+}
+
+class Inventory {
+    - inventory: LinkedList<ArrayList<? extends Device>>
+    - tvlist: ArrayList<Tv>
+    - laptoplist: ArrayList<Laptop>
+    - headphonelist: ArrayList<Headphone>
+    - keyboardlist: ArrayList<Keyboard>
+    - mouselist: ArrayList<Mouse>
+    + Inventory()
+    + add(): void
+    + remove(): void
+    + update(): void
+    + listAll(): void
+    + findCheapest(): void
+    + sort(): void
+    + TotalValue(): void
+    + updateQuantity(): void
+    + exportReport(): void
+}
+
+Tv --|> Device
+Laptop --|> Device
+Headphone --|> Device
+Keyboard --|> Device
+Mouse --|> Device
+
+@enduml
+
