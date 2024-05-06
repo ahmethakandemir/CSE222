@@ -1,10 +1,11 @@
 import java.util.HashMap;
-// import java.util.HashSet;
 import java.util.Map;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.Iterator;
-
+/**
+ * class to create a map for the alphabet
+ */
 public class alphabet {
 	private Set<Character> english_alphabet = new LinkedHashSet<Character>();
 	private Map<Character, Map<Character, Character>> map = new HashMap<Character, Map<Character, Character>>();
