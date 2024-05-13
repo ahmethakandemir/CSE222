@@ -1,8 +1,8 @@
 public class tester {
 
 	public static void main(String[] args) {
-		int my_array[] = {4, 2, 6, 5, 1, 8, 7, 3}; // this array will be edited by TA during assessment...
-		
+		int my_array[] = {5,4,3,2,1,123,456,3,67,5,3,223,545,676,34,0,12124,-2,-34543}; // this array will be edited by TA during assessment...
+
 		System.out.print("Initial Array: ");
 		for(int e: my_array)
 			System.out.print(e + " ");
@@ -12,9 +12,9 @@ public class tester {
 		ss.sort_and_print();
 		BubbleSort bs = new BubbleSort(my_array);
 		bs.sort_and_print();
-		// QuickSort qs = new QuickSort(my_array);
-		// qs.sort_and_print();
-		// MergeSort ms = new MergeSort(my_array);
-		// ms.sort_and_print();
+		QuickSort qs = new QuickSort(my_array);
+		qs.sort_and_print();
+		MergeSort ms = new MergeSort(my_array);
+		ms.sort_and_print();
 	}
 }
